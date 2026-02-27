@@ -7,7 +7,7 @@
 ## 📂 项目结构
 
 ```
-engineering-value-cli-ast-textsafe/
+engineering-metrics/
 │
 ├── 📄 README.md                    # 项目主文档（快速开始、核心特性）
 ├── 📄 package.json                 # 项目配置和依赖

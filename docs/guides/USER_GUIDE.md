@@ -28,7 +28,7 @@
 ```bash
 # 克隆项目
 git clone <repository-url>
-cd engineering-value-cli-ast-textsafe
+cd engineering-metrics
 
 # 安装依赖
 npm install
@@ -746,12 +746,12 @@ jobs:
       - name: Install dependencies
         run: |
           git clone <engineering-value-cli-repo>
-          cd engineering-value-cli-ast-textsafe
+          cd engineering-metrics
           npm install
       
       - name: Generate report
         run: |
-          cd engineering-value-cli-ast-textsafe
+          cd engineering-metrics
           node bin/compare.js 2024 "Member1" "Member2" "Member3"
           node bin/score-team.js ./comparison-report-2024.json
       
@@ -776,7 +776,7 @@ monthly-report:
     - schedules
   script:
     - git clone <engineering-value-cli-repo>
-    - cd engineering-value-cli-ast-textsafe
+    - cd engineering-metrics
     - npm install
     - node bin/compare.js 2024 "Member1" "Member2" "Member3"
     - node bin/score-team.js ./comparison-report-2024.json

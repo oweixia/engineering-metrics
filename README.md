@@ -42,7 +42,7 @@
 ```bash
 # 克隆项目
 git clone <repository-url>
-cd engineering-value-cli-ast-textsafe
+cd engineering-metrics
 
 # 安装依赖
 npm install
@@ -318,7 +318,7 @@ git config user.name
 ```bash
 # 克隆项目
 git clone <repository-url>
-cd engineering-value-cli-ast-textsafe
+cd engineering-metrics
 
 # 安装依赖
 npm install
