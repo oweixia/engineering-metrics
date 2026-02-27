@@ -6,13 +6,13 @@ const {
   getCommitInfo,
   getAllBranches,
   analyzeBranches 
-} = require("./core/git");
-const { analyzeBulk } = require("./core/ast");
-const { calculateImpact } = require("./core/impact");
-const { calculateChurn } = require("./core/churn");
-const { calculateEngineeringScore, getScoreLevel } = require("./core/score");
-const { analyzeBulkComplexity, calculateQualityScore } = require("./core/complexity");
-const { saveComparisonReport } = require("./core/report");
+} = require("../core/git");
+const { analyzeBulk } = require("../core/ast");
+const { calculateImpact } = require("../core/impact");
+const { calculateChurn } = require("../core/churn");
+const { calculateEngineeringScore, getScoreLevel } = require("../core/score");
+const { analyzeBulkComplexity, calculateQualityScore } = require("../core/complexity");
+const { saveComparisonReport } = require("../core/report");
 
 const fs = require("fs");
 

@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
-const { getCommits, getDiffStats, getCommitInfo } = require("./core/git");
-const { analyzeBulk } = require("./core/ast");
-const { calculateImpact } = require("./core/impact");
-const { calculateChurn } = require("./core/churn");
-const { calculateEngineeringScore, getScoreLevel } = require("./core/score");
-const { analyzeBulkComplexity, calculateQualityScore } = require("./core/complexity");
-const { comprehensiveQualityAnalysis } = require("./core/maintainability");
-const { saveComparisonReport } = require("./core/report");
+const { getCommits, getDiffStats, getCommitInfo } = require("../core/git");
+const { analyzeBulk } = require("../core/ast");
+const { calculateImpact } = require("../core/impact");
+const { calculateChurn } = require("../core/churn");
+const { calculateEngineeringScore, getScoreLevel } = require("../core/score");
+const { analyzeBulkComplexity, calculateQualityScore } = require("../core/complexity");
+const { comprehensiveQualityAnalysis } = require("../core/maintainability");
+const { saveComparisonReport } = require("../core/report");
 
 // 解析命令行参数
 const year = process.argv[2];
