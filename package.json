@@ -1,0 +1,46 @@
+{
+  "name": "engineering-metrics",
+  "version": "1.0.0",
+  "description": "Engineering Value Analyzer - 分析和量化 Git 代码贡献的工程价值，支持多人多分支综合对比和 commit 去重，区分代码质量和技术难度，自动识别代码可维护性和可扩展性，生成详细的绩效报告和多维度自动化打分",
+  "main": "bin/cli.js",
+  "bin": {
+    "eng-value": "./bin/cli.js",
+    "eng-compare": "./bin/compare.js",
+    "eng-branch": "./bin/branch-compare.js",
+    "eng-branch-multi": "./bin/branch-multi-compare.js",
+    "eng-score": "./bin/score-team.js"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "start": "node bin/cli.js",
+    "compare": "node bin/compare.js",
+    "branch": "node bin/branch-compare.js",
+    "branch-multi": "node bin/branch-multi-compare.js",
+    "score": "node bin/score-team.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "analysis",
+    "engineering",
+    "performance",
+    "report",
+    "ast",
+    "code-quality",
+    "metrics",
+    "comparison"
+  ],
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oweixia/engineering-metrics.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.23.0",
+    "@babel/traverse": "^7.23.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "scoring": {
+    "weights": {
+      "impact": 2,
+      "codeVolume": 1.5,
+      "churn": -0.5,
+      "functions": 2,
+      "classes": 4,
+      "interfaces": 3,
+      "hooks": 2
+    },
+    "levels": {
+      "S": 100,
+      "A": 70,
+      "B": 50,
+      "C": 30
+    }
+  },
+  "analysis": {
+    "fileExtensions": [".js", ".jsx", ".ts", ".tsx", ".mjs", ".cjs"],
+    "excludePatterns": [
+      "node_modules/**",
+      "dist/**",
+      "build/**",
+      "coverage/**",
+      "*.test.js",
+      "*.spec.js"
+    ]
+  },
+  "report": {
+    "topCommitsCount": 10,
+    "includeChurn": true,
+    "includeAST": true
+  }
+}

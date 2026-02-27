@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Reports (generated files)
+engineering-report-*.json
+engineering-report-*.md
+engineering-report-*.html
+annual-report-*.md
+comparison-report-*.json
+comparison-report-*.md
+comparison-report-*.html
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+coverage/
+.nyc_output/
+
+# Misc
+.env
+.env.local
